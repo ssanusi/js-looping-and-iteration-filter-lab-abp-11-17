@@ -8,13 +8,13 @@ function findMatching(drivers,string) {
 }
 function fuzzyMatch(drivers,string) {
   return drivers.filter(function(e){
-    return e[0] === string;
+    return e[0] === string[0];
   })
-  
+
 }
 function matchName(drivers,string) {
   return drivers.filter(function (e) {
-    return e.name === string 
+    return e.name === string;
 
   })
 
