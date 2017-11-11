@@ -1,7 +1,7 @@
 // Code your solution in this file
 function findMatching(drivers,string) {
   return drivers.filter(function (e) {
-    return e === string || e == string
+    return e[0].toUpperCase() === string || e[0].toLowerCase() == string
 
   })
 
